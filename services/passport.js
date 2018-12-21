@@ -21,7 +21,7 @@ passport.use(
     {
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: '/auth/google/callback',
+        callbackURL: 'https://morning-savannah-97535.herokuapp.com/auth/google/callback',
         proxy: true
     }, 
     (accessToken, refreshToken, profile, done) => {
